@@ -44,10 +44,12 @@ public class Vue{
 
     public ArrayList<Button> definirButtons(Color[] c, ActionListener al){
         ArrayList<Button> l_c = new ArrayList<>();
-        for (Color color : c) {
+        for (int i = 0; i < c.length; i++) {
+            Color col = c[i];
             Button b = new Button();
             b.setSize(new Dimension(50,50));
-            b.setBackground(color);
+            b.setBackground(col);
+            b.setActionCommand(String.valueOf(i));
             l_c.add(b);
             b.addActionListener(al);
         }
