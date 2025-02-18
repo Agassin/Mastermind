@@ -10,5 +10,7 @@ class Modele {
         GAGNE,
         PERDU
     }
-    
+    public void completerRangee(int i){
+        System.out.println("ajout de la couleur :"+couleurs[i]);
+    }
 }

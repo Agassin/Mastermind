@@ -2,7 +2,7 @@
 import java.awt.Color;
 
 
-public class Rangée extends Modele {
+public class Rangée {
     private Color[] jetons;
     private int indiceJeton;
     private int noirs;  
