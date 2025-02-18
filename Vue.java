@@ -13,8 +13,10 @@ public class Vue{
     private Color[] liste_couleurs;
     private JPanel pan = new JPanel();
     private JPanel bas = new JPanel();
+    private JPanel est = new JPanel();
     private BorderLayout bl = new BorderLayout();
     private GridLayout grid = new GridLayout(0,8, 5,5);
+
     
 
     public Vue(int difficulte, Color[] liste_c, ActionListener al){
@@ -27,6 +29,8 @@ public class Vue{
         this.pan.setLayout(bl);
         this.pan.setBackground(Color.LIGHT_GRAY);
         this.pan.add(bas, bl.SOUTH);
+        this.pan.add(est, bl.EAST);
+        this.est.setBackground(Color.ORANGE);
         bas.setLayout(grid);
         bas.setPreferredSize(new Dimension(440, 40));
         ArrayList<Button> b_a  = definirButtons(liste_c, al);
