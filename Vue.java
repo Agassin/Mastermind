@@ -21,14 +21,14 @@ public class Vue{
         this.liste_couleurs = liste_c;
         JFrame fenetre = new JFrame("Mastermind");
         fenetre.setVisible(true);
-        fenetre.setSize(720,500);
+        fenetre.setSize(400,500);
         fenetre.setContentPane(pan);
         fenetre.setVisible(true);
         this.pan.setLayout(bl);
         this.pan.setBackground(Color.LIGHT_GRAY);
         this.pan.add(bas, bl.SOUTH);
         bas.setLayout(grid);
-        bas.setPreferredSize(new Dimension(450, 50));
+        bas.setPreferredSize(new Dimension(440, 40));
         ArrayList<Button> b_a  = definirButtons(liste_c, al);
         
         for (int i = 0; i < grid.getColumns(); i++) {
